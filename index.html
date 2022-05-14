@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Sophi-AI</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-sm bg-light">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand mr-auto"> <img src="img/sophi-ai-logo.png" height="30" alt="Sophi-AI"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link active"><span>Home</span></a></li>
+                        <li class="nav-item"><a href="./listening.html" class="nav-link"><span>Practice Listening</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span>Content Mangement</span></a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" id="idOpenLoginModal" data-bs-toggle="modal" data-bs-target="#idLoginModal">
+                            <span class="fa fa-sign-in" role="button"></span>
+                            Login
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <div id="idLoginModal" class="modal fade" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="mb-3 row">
+                                    <label for="idInputEmail" class="col-sm-2 col-form-label">Email </label>
+                                    <div class="col-sm-8">
+                                        <input type="email" 
+                                        class="form-control form-control-email ms-1" 
+                                        id="idInputEmail"
+                                        placeholder="Enter Email">
+                                    </div>
+                                    
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="idInputPassword" class="col-sm-2 col-form-label">Password </label>
+                                    <div class="col-sm-8">
+                                        <input type="password" 
+                                            class="form-control form-control-password ms-1"
+                                            id="idInputPassword">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-8 offset-sm-2">
+                                        <input type="checkbox" class="form-check-input" id="idInputRemmember">
+                                        <label for="idInputRemmember" class="form-check-label">Remmember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn btn-secondary btn-md mb-auto float-end" 
+                                        type="button" 
+                                        data-bs-dismiss="modal">
+                                        Cancel</button>
+                                <button class="btn btn-primary btn-md ml-1 float-end">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row justify-content-center" >
+                    <div class="my-5 col-6 col-sm-4 align-self-center">
+                        <img src="img/sophi-ai-banner.png" alt="Banner" height="200" width="200" class="img-fluid img-thumbnail rounded">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4 col-sm-3">
+                       <h4>Welcome</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="my-2 col-12 col-sm-9">
+                    <div class="card">
+                        <div class="card-header">
+                            Sophi-AI
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">English Practice Artificial Assistent</h5>
+                            <p class="card-text">Sophi-AI is your virtual English practice assistant, are you ready to start?</p>
+                            <a href="#" class="btn btn-primary">Start Practice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        Copyright
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>

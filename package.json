@@ -1,0 +1,30 @@
+{
+  "name": "sophi-front-end",
+  "version": "1.0.0",
+  "description": "Front-End Concept of Sophi-AI application",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rafanegrette",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1",
+    "popper.js": "^1.15.0",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$theme-colors: (
+    primary: $gray-800
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@mixin padding ($pad-up-dn, $pad-left-right) {
+    padding: $pad-up-dn $pad-left-right;
+}
+
+.footer {
+    background-color: rgb(224, 224, 224);
+    @include padding(10px, 0px);
+}
+
+body{
+    padding-bottom: 50px;
+}
