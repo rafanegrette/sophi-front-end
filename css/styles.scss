@@ -2,8 +2,12 @@
 @import "node_modules/bootstrap/scss/variables";
 
 $theme-colors: (
-    primary: $gray-800
+    primary: $gray-800,
+    info: $blue-400,
+    danger: $red
 );
+
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
